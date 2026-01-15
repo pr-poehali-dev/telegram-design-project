@@ -1,0 +1,17 @@
+{
+  "tests": [
+    {
+      "name": "Get user chats",
+      "method": "GET",
+      "path": "/?path=chats",
+      "headers": {
+        "Authorization": "Bearer mock-token"
+      },
+      "expectedStatus": 200,
+      "expectedBody": {
+        "chats": "array"
+      },
+      "bodyMatcher": "partial"
+    }
+  ]
+}
